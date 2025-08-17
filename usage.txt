@@ -1,0 +1,6 @@
+Ejemplos de uso:
+  python script.py --action review --repo ./mi-proyecto --owner miusuario --remote https://github.com/miusuario/mi-proyecto.git
+  python script.py --action issue --repo ./mi-proyecto
+  python script.py --action pull
+  python script.py --action fork
+  python script.py --action commit

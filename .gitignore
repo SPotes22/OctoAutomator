@@ -1,0 +1,8 @@
+.env
+*.key
+*.csv
+*.log
+env
+venv
+*.pyc
+
