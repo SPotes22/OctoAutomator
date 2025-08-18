@@ -52,7 +52,7 @@ pip install -r requirements.txt
 python script.py --action review --repo ./mi-proyecto --owner miusuario
 
 # Buscar secretos
-python oscript.py --action issue --repo ./mi-proyecto
+python script.py --action issue --repo ./mi-proyecto
 
 # Auto-commit mejorado
 python script.py --action commit
