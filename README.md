@@ -80,3 +80,13 @@ python octoautomator.py --action review --repo "/home/SpiderNet" --owner User
 
 🧩 License
 Este proyecto se publica bajo GPL-3.0.
+
+---
+### Extra
+📜 Descripción de AutoCommit
+
+AutoCommit fue la versión inicial del proyecto, una herramienta minimalista para automatizar commits y pushes en GitHub.
+Nació como un script sencillo que pedía mensaje de commit, confirmaba el push y ejecutaba los comandos básicos de git add, git commit y git push.
+
+Aunque su alcance era reducido, representó el punto de partida hacia un sistema más ambicioso: OctoAutomator.
+De hecho, AutoCommit probó que era posible encapsular tareas repetitivas de Git en un flujo automático con algo tan simple como un subprocess, sirviendo como prototipo para las futuras extensiones de automatización y manejo integral de repositorios.
