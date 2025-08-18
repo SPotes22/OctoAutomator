@@ -1,8 +1,8 @@
 <h1 align="center">🕷️ OctoAutomator 🐙</h1>
 
 <p align="center">
-Automatiza las funciones core de GitHub con la agilidad de la araña y la potencia del pulpo.  
-Un solo script, 8 patas para manejar tus repositorios con fluidez.  
+Automatiza <strong>code reviews</strong> con LLMs y simplifica tareas repetitivas de GitHub.  
+Inspirado en la agilidad de la araña y la potencia del pulpo.  
 </p>
 
 <p align="center">
@@ -13,80 +13,68 @@ Un solo script, 8 patas para manejar tus repositorios con fluidez.
 
 ---
 
-## 🚀 Features
-- Crear y configurar repositorios en segundos.  
-- Manejo de **branches** y **PRs** automatizado.  
-- Limpieza de paths irrelevantes (`__pycache__`, `migrations/`, etc.).  
-- Integración lista con **APIs de GitHub**.  
-- Escalable a flujos **DevOps** y **CI/CD**.  
+## 🚀 Current Features
+- **Code reviews automatizados** usando Gemini (extensible a otros LLMs).  
+- Generación de feedback en archivos separados.  
+- Limpieza automática de paths irrelevantes (`__pycache__`, `migrations/`, etc.).  
+- **Auto-commit** mejorado para flujos rápidos.  
+
+> 🔎 Lo que ves aquí funciona ya mismo en tu entorno local.
 
 ---
 
 ## ⚡ Quickstart
 
 ### 1. Clonar el repo
+
 ```
 git clone https://github.com/SPotes22/OctoAutomator.git
 cd OctoAutomator
 ```
 
 2. Configurar variables de entorno
+
 Crea un archivo .env en la raíz:
 
 ```
-GEMINI_API_KEY=(por el momento)
-GITHUB_TOKEN=(token_creada_desde_gh)
-GITHUB_USERNAME=username
+GEMINI_API_KEY=tu_api_key
+GITHUB_TOKEN=tu_token_github
+GITHUB_USERNAME=tu_usuario
 ```
 
 3. Instalar dependencias
-   
 ```
 pip install -r requirements.txt
 ```
-
 4. Ejecutar
-   
 ```
 # Code review completo
-python script.py --action review --repo ./mi-proyecto --owner miusuario --remote https://github.com/miusuario/mi-proyecto.git
+python octoautomator.py --action review --repo ./mi-proyecto --owner miusuario
 
 # Buscar secretos
-python script.py --action issue --repo ./mi-proyecto
-
-# Ver Pull Requests
-python script.py --action pull
-
-# Ver repositorios con forks
-python script.py --action fork
+python octoautomator.py --action issue --repo ./mi-proyecto
 
 # Auto-commit mejorado
-python script.py --action commit
+python octoautomator.py --action commit
 ```
-
-🕸️ Ejemplo de uso
-
+🕸️ Ejemplo de uso:
 ```
-# Crear documentación de repo local
 python octoautomator.py --action review --repo "/home/SpiderNet" --owner User
 ```
 
 📦 Roadmap
- Automatizar releases.
+Automatizar releases.
 
- Integrar GitHub Actions templates.
+Integrar templates de GitHub Actions.
 
- Soporte multi-LLM para documentación de repos.
+Soporte multi-LLM (GPT, Claude, Llama) para documentación y reviews.
+
+Manejo avanzado de PRs y branches.
 
 🧩 License
 Este proyecto se publica bajo GPL-3.0.
 
----
-### Extra
-📜 Descripción de AutoCommit
-
-AutoCommit fue la versión inicial del proyecto, una herramienta minimalista para automatizar commits y pushes en GitHub.
-Nació como un script sencillo que pedía mensaje de commit, confirmaba el push y ejecutaba los comandos básicos de git add, git commit y git push.
-
-Aunque su alcance era reducido, representó el punto de partida hacia un sistema más ambicioso: OctoAutomator.
-De hecho, AutoCommit probó que era posible encapsular tareas repetitivas de Git en un flujo automático con algo tan simple como un subprocess, sirviendo como prototipo para las futuras extensiones de automatización y manejo integral de repositorios.
+🐣 Orígenes: AutoCommit
+OctoAutomator nació como un script llamado AutoCommit, que pedía mensaje de commit, confirmaba el push y ejecutaba git add, git commit y git push.
+Aunque era minimalista, probó que era posible encapsular tareas repetitivas de Git en un flujo automático.
+Ese prototipo creció hasta convertirse en OctoAutomator.
