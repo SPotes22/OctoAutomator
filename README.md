@@ -49,17 +49,17 @@ pip install -r requirements.txt
 4. Ejecutar
 ```
 # Code review completo
-python octoautomator.py --action review --repo ./mi-proyecto --owner miusuario
+python script.py --action review --repo ./mi-proyecto --owner miusuario
 
 # Buscar secretos
-python octoautomator.py --action issue --repo ./mi-proyecto
+python oscript.py --action issue --repo ./mi-proyecto
 
 # Auto-commit mejorado
-python octoautomator.py --action commit
+python script.py --action commit
 ```
 🕸️ Ejemplo de uso:
 ```
-python octoautomator.py --action review --repo "/home/SpiderNet" --owner User
+python script.py --action review --repo "/home/SpiderNet" --owner User
 ```
 
 📦 Roadmap
