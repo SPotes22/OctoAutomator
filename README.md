@@ -44,7 +44,9 @@ GITHUB_USERNAME=username
 ```
 pip install -r requirements.txt
 ```
+
 4. Ejecutar
+   
 ```
 # Code review completo
 python script.py --action review --repo ./mi-proyecto --owner miusuario --remote https://github.com/miusuario/mi-proyecto.git
@@ -61,10 +63,11 @@ python script.py --action fork
 # Auto-commit mejorado
 python script.py --action commit
 ```
+
 🕸️ Ejemplo de uso
+
 ```
 # Crear documentación de repo local
-```
 python octoautomator.py --action review --repo "/home/SpiderNet" --owner User
 ```
 
